@@ -6,13 +6,14 @@ that you'll have to manually run it.
 ### Requirements
 
 You will need:
-1. A twitter account. Make sure you have your phone number connected to the account.
+
+1. A twitter account. Make sure you have your phone number connected to the account
 2. RVM installed. To find out if you have this, run: `rvm -v`. If you don't have it, follow the RVM instructions and ONLY the RVM instructions at [Railsbridge](http://curriculum.railsbridge.org/installfest/osx_rvm).
 
 ### Installation
 
 1. Clone down this repo: `git clone https://github.com/bermannoah/pahlka-tweets`
-2. Install the twitter gem: `gem install twitter`.
+2. Install the twitter gem: `gem install twitter`
 3. Go to [the Twitter developer pages](https://dev.twitter.com/)
 4. Click on "my apps"
 5. Click on "Create New App"
@@ -23,13 +24,12 @@ You will need:
 10. DO NOT COMMIT ANY OF THE CONTENT ON THIS PAGE TO GITHUB.
 11. Go to the `twitter_keys.rb` file (if you don't have it - `touch twitter_keys.rb`) and fill in the following block with the info from the Keys and Access Tokens page.
 
-```
-CONSUMER_KEY = your consumer key
-CONSUMER_SECRET = your consumer secret
-ACCESS_TOKEN = your access token
-ACCESS_TOKEN_SECRET = your access token secret
-
-```
+  ```
+    CONSUMER_KEY = your consumer key
+    CONSUMER_SECRET = your consumer secret
+    ACCESS_TOKEN = your access token
+    ACCESS_TOKEN_SECRET = your access token secret
+  ```
 
 12. Run `git status`. If `twitter_keys.rb` appears as something about to be committed, add `twitter_keys.rb` to your `.gitignore`. 
 
