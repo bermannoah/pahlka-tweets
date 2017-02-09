@@ -9,20 +9,8 @@ client = Twitter::REST::Client.new do |config|
   config.access_token_secret = ACCESS_TOKEN_SECRET
 end
 
-tweets = client.user_timeline('', options)
+tweets = client.search("pahlka", result_type: "recent").take(10)
 
 tweets.each do |tweet|
-  if Date.today > Date.parse(tweet.created_at.to_s) && Date.today.prev_day.prev_day < Date.parse(tweet.created_at.to_s)
-    client.retweet(tweet) rescue
-    puts tweet.text
-    if tweet.reply?
-      reply_count += 1
-    elsif tweet.retweet?
-      retweet_count += 1
-    else
-      tweet_count += 1
-    end
-  end
+  puts tweet.text
 end
-
-client.update()
