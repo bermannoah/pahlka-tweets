@@ -3,6 +3,11 @@
 A basic framework for making a twitter bot. This is 'just' a script, meaning 
 that you'll have to manually run it.
 
+### Useful information
+
+[The docs for the twitter gem - extensive](http://www.rubydoc.info/gems/twitter)
+[The docs for the twitter gem - basic](https://github.com/sferik/twitter)
+
 ### Requirements
 
 You will need:
