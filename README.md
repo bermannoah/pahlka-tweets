@@ -20,3 +20,17 @@ You will need:
 7. Agree to the developer agreement and create the app.
 8. On the next page, click on permissions and make sure "Read and Write" is selected.
 9. Click on "Keys and Access Tokens", then "Create my access token."
+10. DO NOT COMMIT ANY OF THE CONTENT ON THIS PAGE TO GITHUB.
+11. Go to the `twitter_keys.rb` file (if you don't have it - `touch twitter_keys.rb`) and fill in the following block with the info from the Keys and Access Tokens page.
+
+```
+CONSUMER_KEY = your consumer key
+CONSUMER_SECRET = your consumer secret
+ACCESS_TOKEN = your access token
+ACCESS_TOKEN_SECRET = your access token secret
+
+```
+
+12. Run `git status`. If `twitter_keys.rb` appears as something about to be committed, add `twitter_keys.rb` to your `.gitignore`. 
+
+Great! Now you're all set up. Time to dig in!
